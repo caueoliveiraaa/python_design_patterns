@@ -10,7 +10,7 @@ class User:
     """ Represents a user in the system. """
     def __init__(self, name: str, email: str, password: str):
         """
-        Constructor of the class.
+        Constructor of the User class.
         Trying to access self.__password or self.__online directly will throw an error
         of the type AttributeError.
         """
@@ -24,17 +24,17 @@ class User:
         """ Logs into the website. """
         if self.__validate_credentials():
             self.__online = True
-            print('Logged into the website successfully.')
+            print('Logged into the website successfully')
             return
-        raise ValueError('User does not have the necessary credentials.')
+        raise ValueError('User does not have the necessary credentials')
 
     def log_out_website(self) -> None:
         """ Logs out of the website. """
         if self.__validate_credentials():
             self.__online = False
-            print('Logged out of the website successfully.')
+            print('Logged out of the website successfully')
             return
-        raise ValueError('User does not have the necessary credentials.')
+        raise ValueError('User does not have the necessary credentials')
 
     def is_online(self) -> bool:
         """ Checks if the user is online. """
