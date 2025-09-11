@@ -1,4 +1,8 @@
-""" This file contains examples of abstraction (OOP) """
+"""
+This file contains examples of abstraction (OOP).
+Abstractions are a way of hiding complicated details from the end user,
+and trying to simplify whatever task you're trying to do.
+"""
 from abc import ABC, abstractmethod
 
 
